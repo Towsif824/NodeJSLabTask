@@ -8,8 +8,6 @@ router.get('/',function(req,res){
 });
 
 
-
-
 router.post('/',function(req,res){
   if(req.body.mp=='MyProfile'){
     res.redirect('/MyProfile');
