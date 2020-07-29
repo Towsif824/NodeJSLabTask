@@ -1,12 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
+
+
 router.get('/',function(req,res){
-  res.render('AddEmployee');
-})
+  res.render('MyProfile');
+});
+
+
 
 router.post('/',function(req,res){
-  res.send('employee added')
-})
+  if(req.body.choice=="Back"){
+    res.redirect('/employee');
+  }
+});
 
 module.exports = router;
