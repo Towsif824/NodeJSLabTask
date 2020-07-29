@@ -11,10 +11,10 @@ router.get('/',function(req,res){
 
 
 router.post('/',function(req,res){
-  if(req.body.mp=="MyProfile"){
+  if(req.body.mp=='MyProfile'){
     res.redirect('/MyProfile');
   }
-  else if(req.body.up=="UpdateProfile"){
+  else if(req.body.up=='UpdateProfile'){
     res.redirect('/UpdateProfile');
   }
 });

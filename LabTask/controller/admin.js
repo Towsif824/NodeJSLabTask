@@ -11,11 +11,12 @@ router.use('/',function(req,res){
 
 
 router.post('/',function(req,res){
-  if(req.body.choice=="AddEmployee"){
+  if(req.body.choice=='AddEmployee'){
     res.redirect('/AddEmployee');
   }
-  else if(req.body.choice=="AllEmployeeList"){
-    res.redirect('/AllEmployeeList');
+
+  else if(req.body.choice=='AllEmpList'){
+    res.redirect('/AllEmpList');
   }
 });
 

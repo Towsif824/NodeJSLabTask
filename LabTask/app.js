@@ -6,7 +6,7 @@ var admin = require('./controller/admin');
 //var allEmpList = ('./controller/AllEmpList');
 var employee = require('./controller/employee');
 var myProfile       = require('./controller/MyProfile');
-//var updateProfile   = require('./controller/UpdateProfile');
+var updateProfile   = require('./controller/UpdateProfile');
 var app = express();
 
 
@@ -21,7 +21,7 @@ app.use('/admin', admin);
 //app.use('/AllEmpList', allEmpList);
 app.use('/employee', employee);
 app.use('/MyProfile',myProfile);
-//app.use('/UpdateProfile',updateProfile);
+app.use('/UpdateProfile',updateProfile);
 
 
 
