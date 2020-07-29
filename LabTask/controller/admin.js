@@ -3,19 +3,17 @@ var router = express.Router();
 
 
 
-router.use('/',function(req,res){
+router.get('/',function(req,res){
   res.render('admin');
 });
 
 
-
-
 router.post('/',function(req,res){
-  if(req.body.choice=='AddEmployee'){
+  if(req.body.AddEmployee =='AddEmployee'){
     res.redirect('/AddEmployee');
   }
 
-  else if(req.body.choice=='AllEmpList'){
+  else if(req.body.AllEmpList =='AllEmpList'){
     res.redirect('/AllEmpList');
   }
 });

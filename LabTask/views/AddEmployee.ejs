@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Add page</title>
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+
+            <legend>Add Employee!</legend>
+            <table>
+
+              <tr>
+                <td>Employee name:</td>
+                <td><input type="text" name="empName" value="e.g tawsif"></td>
+              </tr>
+              <tr>
+                <td>Employee Phone:</td>
+                <td><input type="text" name="empPhn" value="e.g 019"></td>
+              </tr>
+              <tr>
+                <td>Employee name:</td>
+                <td><input type="text" name="empName" ></td>
+              </tr>
+               <tr>
+                <td>Employee Address</td>
+                <td><input type="textarea" name="empAdd"></td>
+              </tr>
+                <td>
+                  <input type="radio" id="male" name="gender" value="male">
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="female">
+                  <label for="female">Female</label>
+                  <input type="radio" id="other" name="gender" value="other">
+                  <label for="other">Other</label>
+                </td>
+              <tr>
+                <td>
+                  <label for="EmpDesingation">Choose a EmpDesingation:</label>
+                  <select id="Emp" name="Desingation">
+                  <option value="Developer">Developer</option>
+                  <option value="Senior Developer">Senior Developer</option>
+                  <option value="Assitant Developer">Assitant Developer</option>
+                  <option value="Junior Developer">Junior Developer</option>
+                  </select>
+                </td>
+              </tr> 
+              <tr>
+                <td><input type="submit" name="submit" value="AddEmployee"></td>
+              </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
